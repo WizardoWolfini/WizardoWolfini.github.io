@@ -1,7 +1,55 @@
-img{
-    width:200px;
-}
 body{
-    text-align:middle;
+    text-align:center;
     font-family: "Arial";
+    font-size:30px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    color:Purple;
+}
+#image1{
+    animation-name:movecards;
+    animation-duration:4s;
+    animation-delay: -2s;
+    position:relative;
+}
+#image2{
+    animation-name:movecards;
+    animation-duration:2s;
+    position:relative;
+}
+#image3{
+    animation-name:movecards;
+    animation-duration:2s;
+    position:relative;
+}
+#image4{
+    animation-name:movecards;
+    animation-duration:8s;
+    animation-delay: -2s;
+    position:relative;
+}
+#image5{
+    animation-name:movecards;
+    animation-duration:6s;
+    animation-delay: -2s;
+    position:relative;
+}
+#image6{
+    animation-name:movecards;
+    animation-duration:4s;
+    position:relative;
+}
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+@keyframes movecards{
+    from {left:-1000;}
+    to {left:1000;}
+    from{bottom:100;}
+    to{bottom:-100;}
 }
